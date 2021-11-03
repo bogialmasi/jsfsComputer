@@ -30,7 +30,7 @@ public class HomeController {
         return service.getComputerBySerial(serial);
     }
 
-    @GetMapping("/computer/{manufacturer}")
+    @GetMapping("/computer/manufacturer/{manufacturer}")
     public Computer getComputerByManufacturer(@PathVariable String manufacturer){
         return service.getComputerByManufacturer(manufacturer);
     }
