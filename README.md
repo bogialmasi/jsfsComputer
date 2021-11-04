@@ -30,7 +30,7 @@ Entity
 
 | serial | manufacture | RAM | madein |
 | :---- | :----: | ----: | :----: |
-| 100 | IBM | 2 | Taivan |
+| 100 | IBM | 2 | Taiwan |
 
 
 Postman indítása: chrome://apps/
