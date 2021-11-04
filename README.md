@@ -1,19 +1,39 @@
-# jsfsComputer
+# computers
 
->First web service
+> Első Web Service
 
-**Methods:**
-- GET
-    - localhost:8080/computers shows all computers
-    - localhost:8080/computers/{id} shows computer with chosen ID
-    - localhost:8080/manufacturer/{manufacturer} shows computers of specific manufacturer
+A web service szolgáltatásai
+
+1. Minden számítógép
+- Method: GET
+- url: http://localhost:8080/computers
+2. Egy számítógép serial number alapján
+- Method: GET
+- url: http://localhost:8080/computers/{id}
+3. Számítógépek egy gyártótól
+- Method: GET
+- url: http://localhost:8080/computers/{manufacture}
+4. Új számítógép felvitele
+- Method: POST
+- url: http://localhost:8080/computers
+5. Számítógép törlése serial number alapján
+- Method: DELETE
+- url: http://localhost:8080/computers/{id}
+6. Számítógép módosítása ( update )
+- Method: PATCH
+- url: http://localhost:8080/computers/{id}/{ram}
+7. Számítógép módosítása ( replace )
+- Method: PUT
+- url: http://localhost:8080/computers/{id}
 
 Entity
 
-| serial | manufacturer | RAM | madeIn |
-| ---: | :---: | ---: | :---: |
-| 100 | IBM | 2 | Taiwan |
+| serial | manufacture | RAM | madein |
+| :---- | :----: | ----: | :----: |
+| 100 | IBM | 2 | Taivan |
 
-Postman: chrome://apps
+
+Postman indítása: chrome://apps/
+
 
 *Minden jog fenntartva*

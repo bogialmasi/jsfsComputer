@@ -50,4 +50,26 @@ public class ComputerService {
         }
         throw new ResponseStatusException(HttpStatus.NOT_FOUND);
     }
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+
+    public Computer updateComputer(int serial, int ram) {
+        Optional<Computer> computer = repository.findById(serial);
+        if (computer.isPresent()) {
+            Computer updatedComputer = computer.get();
+            updatedComputer.setRam(ram);
+            repository.save(updatedComputer);}
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+
+    public Computer replaceComputer(int serial, Computer computer) {
+        Optional<Computer> optionalComputer = repository.findById(serial);
+        if (optionalComputer.isPresent()) {
+            Computer replacedComputer = optionalComputer.get();
+            return repository.save(replacedComputer);
+        }
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+    }
 }
