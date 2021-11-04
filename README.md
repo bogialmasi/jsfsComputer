@@ -4,9 +4,9 @@
 
 **Methods:**
 - GET
-    - http://localhost:8080/computers shows all computers
-    - /computers/{id} shows computer with chosen ID
-    - /manufacturer/{manufacturer} shows computers of specific manufacturer
+    - localhost:8080/computers shows all computers
+    - localhost:8080/computers/{id} shows computer with chosen ID
+    - localhost:8080/manufacturer/{manufacturer} shows computers of specific manufacturer
 
 Entity
 
